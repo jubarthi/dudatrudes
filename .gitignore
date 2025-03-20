@@ -1,0 +1,14 @@
+# Ignora a pasta node_modules
+node_modules/
+
+# Ignora a pasta com os binários do Chrome (Puppeteer)
+.local-chromium/
+
+# Outras pastas/arquivos grandes que não deseja versionar
+uploads/
+logs/
+config/credentials.json
+.wwebjs_auth/
+node_modules/ 
+.local-chromium/ 
+uploads/ 
