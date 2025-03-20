@@ -1,0 +1,138 @@
+/* style.css */
+
+/* Preenche a tela inteira */
+.fullscreen {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo-img {
+    max-height: 80px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ccc;
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  .close-button:hover {
+    background: #999;
+  }
+  
+  h1, h2, p, label {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  label {
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"] {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Animação pulsante */
+  @keyframes pulsate {
+    0% {
+      box-shadow: 0 0 5px 2px rgba(0,255,0,0.3);
+    }
+    50% {
+      box-shadow: 0 0 15px 8px rgba(0,255,0,0.6);
+    }
+    100% {
+      box-shadow: 0 0 5px 2px rgba(0,255,0,0.3);
+    }
+  }
+  .pulsante {
+    animation: pulsate 2s infinite;
+  }
+  
+  /* Barra de progresso */
+  .progress-container {
+    width: 80%;
+    max-width: 400px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #4CAF50;
+    transition: width 0.4s ease;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .checkbox-container label {
+    margin-left: 5px;
+  }
+  

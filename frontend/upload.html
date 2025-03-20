@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload | Dudatrudes 15 Anos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="fullscreen">
+  <div class="logo">
+    <img src="logo.png" alt="Logo Dudatrudes 15 Anos" class="logo-img"/>
+  </div>
+  <div class="close-button" onclick="window.close()">X</div>
+
+  <h2>Selecione suas fotos e vídeos</h2>
+
+  <div class="checkbox-container">
+    <input type="checkbox" id="checkGaleria" />
+    <label for="checkGaleria">Autorizo o acesso à minha galeria</label>
+  </div>
+
+  <!-- Input de arquivos, inicialmente oculto, será exibido após marcar o checkbox -->
+  <input type="file" id="arquivos" name="arquivos" multiple accept="image/*,video/*" style="display: none;"/>
+
+  <!-- Botão pulsante para enviar os arquivos -->
+  <button id="btnEnviar" class="button pulsante">Enviar</button>
+
+  <!-- Barra de progresso (simulada) -->
+  <div id="progressContainer" class="progress-container" style="display: none;">
+    <div id="progressBar" class="progress-bar"></div>
+  </div>
+
+  <footer>
+    Desenvolvido por Thiago Dias Schwanz - GJ - ZIPHIOS
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

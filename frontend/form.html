@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário | Dudatrudes 15 Anos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="fullscreen">
+  <div class="logo">
+    <img src="logo.png" alt="Logo Dudatrudes 15 Anos" class="logo-img"/>
+  </div>
+  <div class="close-button" onclick="window.close()">X</div>
+
+  <h2>Preencha seus dados</h2>
+  <form id="formDados">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required />
+
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome" name="sobrenome" required />
+
+    <label for="whatsapp">WhatsApp:</label>
+    <input type="tel" id="whatsapp" name="whatsapp" required placeholder="5513999999999"/>
+
+    <label for="nascimento">Data de Nascimento:</label>
+    <input type="date" id="nascimento" name="nascimento" required />
+
+    <!-- Botão que envia os dados para o backend e, se tudo der certo, segue para upload.html -->
+    <button type="submit" class="button">Vamos Compartilhar</button>
+  </form>
+
+  <footer>
+    Desenvolvido por Thiago Dias Schwanz - GJ - ZIPHIOS
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
